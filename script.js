@@ -12,8 +12,8 @@ button.addEventListener("click", function(){
 
     h1.style.position = 'absolute'
 
-    var x = Math.floor(Math.random()*100)
-    var y = Math.floor(Math.random()*100)
+    var x = Math.floor(Math.random()*80)
+    var y = Math.floor(Math.random()*80)
     var rot = Math.floor(Math.random()*360)
     var scl =Math.floor(Math.random()*3)
 
