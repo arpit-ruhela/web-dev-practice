@@ -3,69 +3,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body {
-    height: 100%;
+
+body{
+    height: 100vh;
     width: 100%;
-    box-sizing: border-box;
-    
-}
-main{
-    height: 100%;
-    width: 100%;
+    background: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
 }
-.card{
-  height: 60%;
-  width: 20%;
-  background-color: rgb(224, 218, 218);
-  border-radius: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.card div{
-    position: relative;
-    overflow: hidden;
-}
-.card img{
-    height: 300px;
-    width: 100%;
-    padding: 5px;
-    border-radius: 20px;
-}
-.upper{
-    width: 100%;
-    background-color: rgb(223, 216, 216);
-    display: flex;
-    align-items: center;
 
+.title{
+    color: white;
+    margin-bottom: 20px;
 }
-.upper img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+
+.piano{
+    position: relative;
+    display: flex;
 }
-.upper h3{
-    font-weight: 400;
-}
-.card h1{
+
+.white-key{
+    background: white;
+    height: 300px;
+    width: 70px;
+    border: 1px solid black;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     font-weight: 600;
-    text-align: center;
-    padding: 10px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
-.card i{
+
+.black-key{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale() rotate(-90deg);
-    font-size: 70px;
-    background-image: url(https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147835127.jpg?semt=ais_incoming&w=740&q=80);
-    background-size: cover;
-    color: transparent;
-    background-clip: text;
-    transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
+    background: black;
+    height: 180px;
+    width: 45px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
 }
+.active {
+    scale: .95;
+}
+/* Black keys proper positions */
+.key1{ left: 50px; }
+.key2{ left: 120px; }
+.key3{ left: 260px; }
+.key4{ left: 330px; }
+.key5{ left: 400px; }
+.key6{ left: 540px; }
+.key7{ left: 610px; }
+.key8{ left: 750px; }
+.key9{ left: 820px; }
+.key10{ left: 890px; }
